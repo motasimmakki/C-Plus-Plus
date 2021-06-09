@@ -102,12 +102,14 @@ $(document).ready(function(){initNavTree('d8/d90/iterative__tree__traversals_8cp
 <p>Iterative version of Preorder, Postorder and preorder traversal of tree, (<a href="https://en.wikipedia.org/wiki/Tree_traversal">https://en.wikipedia.org/wiki/Tree_traversal</a>).  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;bits/stdc++.h&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;stack&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for iterative_tree_traversals.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d94/iterative__tree__traversals_8cpp__incl.svg" width="294" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d94/iterative__tree__traversals_8cpp__incl.svg" width="428" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -121,15 +123,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a9a12e48d4b3e8f4c0968608811a17671"><td class="memItemLeft" align="right" valign="top"><a id="a9a12e48d4b3e8f4c0968608811a17671"></a>
 BT *&#160;</td><td class="memItemRight" valign="bottom"><b>createNewNode</b> (int <a class="el" href="../../d1/df3/hash__search_8cpp.html#a6e1a77282bc65ad359d753d25df23243">data</a>)</td></tr>
 <tr class="separator:a9a12e48d4b3e8f4c0968608811a17671"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5283cc6e5b7331d4dd8f3d2b398b1835"><td class="memItemLeft" align="right" valign="top"><a id="a5283cc6e5b7331d4dd8f3d2b398b1835"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>preOrderIterative</b> (BT *root)</td></tr>
-<tr class="separator:a5283cc6e5b7331d4dd8f3d2b398b1835"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5d9312aeeaa8523b50ce4c91fd1c8d5"><td class="memItemLeft" align="right" valign="top"><a id="ac5d9312aeeaa8523b50ce4c91fd1c8d5"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>postOrderIterative</b> (BT *root)</td></tr>
-<tr class="separator:ac5d9312aeeaa8523b50ce4c91fd1c8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a417613f24658ce022d2af204bd9ef7d1"><td class="memItemLeft" align="right" valign="top"><a id="a417613f24658ce022d2af204bd9ef7d1"></a>
-<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inOrderIterative</b> (BT *root)</td></tr>
-<tr class="separator:a417613f24658ce022d2af204bd9ef7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b2b7eeb612d70c8e8048ab0f82962e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a01b2b7eeb612d70c8e8048ab0f82962e">preOrderIterative</a> (BT *root)</td></tr>
+<tr class="memdesc:a01b2b7eeb612d70c8e8048ab0f82962e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a01b2b7eeb612d70c8e8048ab0f82962e" title="preOrderIterative() function that will perform the preorder traversal iteratively,...">preOrderIterative()</a> function that will perform the preorder traversal iteratively, and return the result array that contain the preorder traversal of a tree.  <a href="../../d8/d90/iterative__tree__traversals_8cpp.html#a01b2b7eeb612d70c8e8048ab0f82962e">More...</a><br /></td></tr>
+<tr class="separator:a01b2b7eeb612d70c8e8048ab0f82962e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656ebb06e4c18d4540a6edeaef5d7843"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a656ebb06e4c18d4540a6edeaef5d7843">postOrderIterative</a> (BT *root)</td></tr>
+<tr class="memdesc:a656ebb06e4c18d4540a6edeaef5d7843"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a656ebb06e4c18d4540a6edeaef5d7843" title="postOrderIterative() function that will perform the postorder traversal iteratively,...">postOrderIterative()</a> function that will perform the postorder traversal iteratively, and return the result array that contain the postorder traversal of a tree.  <a href="../../d8/d90/iterative__tree__traversals_8cpp.html#a656ebb06e4c18d4540a6edeaef5d7843">More...</a><br /></td></tr>
+<tr class="separator:a656ebb06e4c18d4540a6edeaef5d7843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54fdc76236eaeb2aafd6a8065353fd0"><td class="memItemLeft" align="right" valign="top"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d90/iterative__tree__traversals_8cpp.html#ac54fdc76236eaeb2aafd6a8065353fd0">inOrderIterative</a> (BT *root)</td></tr>
+<tr class="memdesc:ac54fdc76236eaeb2aafd6a8065353fd0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d90/iterative__tree__traversals_8cpp.html#ac54fdc76236eaeb2aafd6a8065353fd0" title="inOrderIterative() function that will perform the inorder traversal iteratively, and return the resul...">inOrderIterative()</a> function that will perform the inorder traversal iteratively, and return the result array that contain the inorder traversal of a tree.  <a href="../../d8/d90/iterative__tree__traversals_8cpp.html#ac54fdc76236eaeb2aafd6a8065353fd0">More...</a><br /></td></tr>
+<tr class="separator:ac54fdc76236eaeb2aafd6a8065353fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,10 +145,165 @@ struct <a class="el" href="../../df/d6e/struct_binary_tree.html">BinaryTree</a>&
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Iterative version of Preorder, Postorder and preorder traversal of tree, (<a href="https://en.wikipedia.org/wiki/Tree_traversal">https://en.wikipedia.org/wiki/Tree_traversal</a>). </p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/motasimmakki">Motasim</a></dd></dl>
-<p>-&gt;Iterative Preorder Traversal of a tree&lt;- Create a Stack that will store the <a class="el" href="../../db/d8b/struct_node.html">Node</a> of Tree. Push the root node into the stack. Save the root into the variabe named as current, and pop and elemnt from the stack. Store the data of current into the result array, and start traversing from it. Push both the child node of the current node into the stack, first right child then left child. Repeat the same set of steps untill the Stack becomes empty. And return the result array as the preorder traversal of a tree.</p>
-<p>-&gt;Iterative Postorder Traversal of a tree&lt;- Create a Stack that will store the <a class="el" href="../../db/d8b/struct_node.html">Node</a> of Tree. Push the root node into the stack. Save the root into the variabe named as current, and pop and elemnt from the stack. Store the data of current into the result array, and start traversing from it. Push both the child node of the current node into the stack, first left child then right child. Repeat the same set of steps untill the Stack becomes empty. Now reverse the result array and then return it to the calling function as a postorder traversal of a tree.</p>
-<p>-&gt;Iterative Inorder Traversal of a tree&lt;- Create a Stack that will store the <a class="el" href="../../db/d8b/struct_node.html">Node</a> of Tree. Push the root node into the stack. Save the root into the variabe named as current. Now iterate and take the current to the extreme left of the tree by traversing only to its left. Pop the elemnt from the stack and assign it to the current. Store the data of current into the result array. Repeat the same set of steps untill the Stack becomes empty or the current becames NULL. And return the result array as the inorder traversal of a tree. </p>
-</div></div><!-- contents -->
+<h3><a class="anchor" id="autotoc_md70"></a>
+Iterative Preorder Traversal of a tree</h3>
+<p>Create a Stack that will store the <a class="el" href="../../db/d8b/struct_node.html">Node</a> of Tree. Push the root node into the stack. Save the root into the variabe named as current, and pop and elemnt from the stack. Store the data of current into the result array, and start traversing from it. Push both the child node of the current node into the stack, first right child then left child. Repeat the same set of steps untill the Stack becomes empty. And return the result array as the preorder traversal of a tree.</p>
+<h3><a class="anchor" id="autotoc_md71"></a>
+Iterative Postorder Traversal of a tree</h3>
+<p>Create a Stack that will store the <a class="el" href="../../db/d8b/struct_node.html">Node</a> of Tree. Push the root node into the stack. Save the root into the variabe named as current, and pop and elemnt from the stack. Store the data of current into the result array, and start traversing from it. Push both the child node of the current node into the stack, first left child then right child. Repeat the same set of steps untill the Stack becomes empty. Now reverse the result array and then return it to the calling function as a postorder traversal of a tree.</p>
+<h3><a class="anchor" id="autotoc_md72"></a>
+Iterative Inorder Traversal of a tree</h3>
+<p>Create a Stack that will store the <a class="el" href="../../db/d8b/struct_node.html">Node</a> of Tree. Push the root node into the stack. Save the root into the variabe named as current. Now iterate and take the current to the extreme left of the tree by traversing only to its left. Pop the elemnt from the stack and assign it to the current. Store the data of current into the result array. Repeat the same set of steps untill the Stack becomes empty or the current becames NULL. And return the result array as the inorder traversal of a tree. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="ac54fdc76236eaeb2aafd6a8065353fd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac54fdc76236eaeb2aafd6a8065353fd0">&#9670;&nbsp;</a></span>inOrderIterative()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;int&gt; inOrderIterative </td>
+          <td>(</td>
+          <td class="paramtype">BT *&#160;</td>
+          <td class="paramname"><em>root</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d8/d90/iterative__tree__traversals_8cpp.html#ac54fdc76236eaeb2aafd6a8065353fd0" title="inOrderIterative() function that will perform the inorder traversal iteratively, and return the resul...">inOrderIterative()</a> function that will perform the inorder traversal iteratively, and return the result array that contain the inorder traversal of a tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>head/root node of a tree. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>result that is containing the inorder traversal of a tree. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                          {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack&lt;BT*&gt;</a> <a class="code" href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        BT* current = root;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">while</span>(!<a class="code" href="../../d1/dc2/classstack.html">stack</a>.empty() || current){</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordflow">while</span>(current){</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(current);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                current = current-&gt;left;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            current = <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">top</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a6cd4b95d5de00d41b2491392338384dc">pop</a>();    </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.push_back(current-&gt;data);   </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            current = current-&gt;right;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }   </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
+<div class="ttc" id="aclassstack_html"><div class="ttname"><a href="../../d1/dc2/classstack.html">stack</a></div><div class="ttdef"><b>Definition:</b> stack.h:26</div></div>
+<div class="ttc" id="aclassstack_html_a21c0bb6ce7dcfe445cc12031977ea344"><div class="ttname"><a href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">stack::top</a></div><div class="ttdeci">Type top()</div><div class="ttdef"><b>Definition:</b> stack.h:93</div></div>
+<div class="ttc" id="aclassstack_html_a5705c3926dcf5fd3f9c964467a50b81d"><div class="ttname"><a href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">stack::push</a></div><div class="ttdeci">void push(Type item)</div><div class="ttdef"><b>Definition:</b> stack.h:83</div></div>
+<div class="ttc" id="aclassstack_html_a6cd4b95d5de00d41b2491392338384dc"><div class="ttname"><a href="../../d1/dc2/classstack.html#a6cd4b95d5de00d41b2491392338384dc">stack::pop</a></div><div class="ttdeci">void pop()</div><div class="ttdef"><b>Definition:</b> stack.h:99</div></div>
+<div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:76</div></div>
+<div class="ttc" id="aparanthesis__matching_8cpp_html_aa37d24a036d239b3b528f13b9de880c7"><div class="ttname"><a href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a></div><div class="ttdeci">char stack[MAX]</div><div class="ttdef"><b>Definition:</b> paranthesis_matching.cpp:20</div></div>
+<div class="ttc" id="astack_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack</a></div></div>
+<div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt; int &gt;</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a656ebb06e4c18d4540a6edeaef5d7843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a656ebb06e4c18d4540a6edeaef5d7843">&#9670;&nbsp;</a></span>postOrderIterative()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;int&gt; postOrderIterative </td>
+          <td>(</td>
+          <td class="paramtype">BT *&#160;</td>
+          <td class="paramname"><em>root</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a656ebb06e4c18d4540a6edeaef5d7843" title="postOrderIterative() function that will perform the postorder traversal iteratively,...">postOrderIterative()</a> function that will perform the postorder traversal iteratively, and return the result array that contain the postorder traversal of a tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>head/root node of a tree. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>result that is containing the postorder traversal of a tree. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                           {   </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack&lt;BT*&gt;</a> <a class="code" href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(root);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">while</span>(!<a class="code" href="../../d1/dc2/classstack.html">stack</a>.empty()){</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.push_back(<a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">top</a>()-&gt;data);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        BT* current = <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">top</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a6cd4b95d5de00d41b2491392338384dc">pop</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span>(current-&gt;left)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(current-&gt;left);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span>(current-&gt;right)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(current-&gt;right);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/reverse.html">reverse</a>(<a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.begin(), <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.end());</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="ttc" id="areverse_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/reverse.html">std::reverse</a></div><div class="ttdeci">T reverse(T... args)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a01b2b7eeb612d70c8e8048ab0f82962e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b2b7eeb612d70c8e8048ab0f82962e">&#9670;&nbsp;</a></span>preOrderIterative()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;int&gt; preOrderIterative </td>
+          <td>(</td>
+          <td class="paramtype">BT *&#160;</td>
+          <td class="paramname"><em>root</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a01b2b7eeb612d70c8e8048ab0f82962e" title="preOrderIterative() function that will perform the preorder traversal iteratively,...">preOrderIterative()</a> function that will perform the preorder traversal iteratively, and return the result array that contain the preorder traversal of a tree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>head/root node of a tree. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>result that is containing the preorder traversal of a tree. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                          {   </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack&lt;BT*&gt;</a> <a class="code" href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(root);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">while</span>(!<a class="code" href="../../d1/dc2/classstack.html">stack</a>.empty()){</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.push_back(<a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">top</a>()-&gt;data);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        BT* current = <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">top</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a6cd4b95d5de00d41b2491392338384dc">pop</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span>(current-&gt;right)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(current-&gt;right);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">if</span>(current-&gt;left)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(current-&gt;left);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
