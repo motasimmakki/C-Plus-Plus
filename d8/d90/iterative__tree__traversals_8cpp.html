@@ -181,10 +181,10 @@ Iterative Inorder Traversal of a tree</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result that is containing the inorder traversal of a tree. </dd></dl>
 <div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                          {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack&lt;BT*&gt;</a> <a class="code" href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack&lt;BT *&gt;</a> <a class="code" href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        BT* current = root;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        BT *current = root;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">while</span>(!<a class="code" href="../../d1/dc2/classstack.html">stack</a>.empty() || current){</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordflow">while</span>(current){</div>
@@ -234,14 +234,14 @@ Iterative Inorder Traversal of a tree</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result that is containing the postorder traversal of a tree. </dd></dl>
 <div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                           {   </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack&lt;BT*&gt;</a> <a class="code" href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack&lt;BT *&gt;</a> <a class="code" href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(root);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">while</span>(!<a class="code" href="../../d1/dc2/classstack.html">stack</a>.empty()){</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.push_back(<a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">top</a>()-&gt;data);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        BT* current = <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">top</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        BT *current = <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">top</a>();</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a6cd4b95d5de00d41b2491392338384dc">pop</a>();</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span>(current-&gt;left){</div>
@@ -285,14 +285,14 @@ Iterative Inorder Traversal of a tree</h3>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>result that is containing the preorder traversal of a tree. </dd></dl>
 <div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                          {   </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack&lt;BT*&gt;</a> <a class="code" href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack&lt;BT *&gt;</a> <a class="code" href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(root);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">while</span>(!<a class="code" href="../../d1/dc2/classstack.html">stack</a>.empty()){</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.push_back(<a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">top</a>()-&gt;data);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        BT* current = <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">top</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        BT *current = <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">top</a>();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a6cd4b95d5de00d41b2491392338384dc">pop</a>();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span>(current-&gt;right){</div>
