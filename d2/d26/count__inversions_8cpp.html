@@ -315,9 +315,9 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of inversions found in merge step </dd></dl>
 <div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                                             {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    uint32_t i = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>;       <span class="comment">/* i --&gt; index of left sub-array */</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    uint32_t i = left;       <span class="comment">/* i --&gt; index of left sub-array */</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    uint32_t j = mid + 1;    <span class="comment">/* j --&gt; index for right sub-array */</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    uint32_t k = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>;       <span class="comment">/* k --&gt; index for resultant array temp */</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    uint32_t k = left;       <span class="comment">/* k --&gt; index for resultant array temp */</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    uint32_t inv_count = 0;  <span class="comment">// inversion count</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">while</span> ((i &lt;= mid) &amp;&amp; (j &lt;= right)) {</div>
@@ -338,12 +338,11 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        temp[k++] = arr[j++];</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// Copy temp[] to arr[]</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">for</span> (k = left; k &lt;= <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>; k++) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">for</span> (k = left; k &lt;= right; k++) {</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        arr[k] = temp[k];</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> inv_count;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
-<div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a></div><div class="ttdeci">T left(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -403,7 +402,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    uint32_t mid = 0, inv_count = 0;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">if</span> (right &gt; left) {</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="comment">// midpoint to split the array</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        mid = (<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>) / 2;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        mid = (right + left) / 2;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="comment">// Add inversions in left and right sub-arrays</span></div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        inv_count += <a class="code" href="../../d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7">mergeSort</a>(arr, temp, left, mid);  <span class="comment">// left sub-array</span></div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        inv_count += <a class="code" href="../../d5/d4c/group__sorting.html#gab6b14fea48d9841e29b9fc26be6e05d7">mergeSort</a>(arr, temp, mid + 1, right);</div>
@@ -414,13 +413,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">return</span> inv_count;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
 <div class="ttc" id="agroup__sorting_html_ga460c61cd948203b4816bef2accb3fc73"><div class="ttname"><a href="../../d5/d4c/group__sorting.html#ga460c61cd948203b4816bef2accb3fc73">merge</a></div><div class="ttdeci">void merge(int *arr, int l, int m, int r)</div><div class="ttdef"><b>Definition:</b> merge_sort.cpp:33</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d26/count__inversions_8cpp_ae97a486e14101c4822ea8dc47f0d1661_cgraph.svg" width="414" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a851ca6a0391d14fb49a97d55e4377497"></a>

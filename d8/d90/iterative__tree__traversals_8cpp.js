@@ -1,10 +1,11 @@
 var iterative__tree__traversals_8cpp =
 [
-    [ "BinaryTree", "df/d6e/struct_binary_tree.html", "df/d6e/struct_binary_tree" ],
-    [ "createNewNode", "d8/d90/iterative__tree__traversals_8cpp.html#a9a12e48d4b3e8f4c0968608811a17671", null ],
-    [ "inOrderIterative", "d8/d90/iterative__tree__traversals_8cpp.html#ac54fdc76236eaeb2aafd6a8065353fd0", null ],
+    [ "Node", "d8/d90/iterative__tree__traversals_8cpp.html#a5408f139915768c94dc42ae9b1491754", null ],
+    [ "createNewNode", "d8/d90/iterative__tree__traversals_8cpp.html#a6b7d9da945b0f0278213cf5521c4d274", null ],
+    [ "inOrderIterative", "d8/d90/iterative__tree__traversals_8cpp.html#a0b6b50c83e4377ffb651f9e80a3d83dd", null ],
     [ "main", "d8/d90/iterative__tree__traversals_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
-    [ "postOrderIterative", "d8/d90/iterative__tree__traversals_8cpp.html#a656ebb06e4c18d4540a6edeaef5d7843", null ],
-    [ "preOrderIterative", "d8/d90/iterative__tree__traversals_8cpp.html#a01b2b7eeb612d70c8e8048ab0f82962e", null ],
-    [ "BT", "d8/d90/iterative__tree__traversals_8cpp.html#a9bf1a92c4391386e3569d24d21bb44d8", null ]
+    [ "postOrderIterative", "d8/d90/iterative__tree__traversals_8cpp.html#a098d66a08e01729b236ba6557d716361", null ],
+    [ "preOrderIterative", "d8/d90/iterative__tree__traversals_8cpp.html#a2b3b2c3fb678ef9aa4087468bbfdbb4b", null ],
+    [ "left", "d8/d90/iterative__tree__traversals_8cpp.html#aab3c039f2bb931946b68a03d6c1e1cff", null ],
+    [ "right", "d8/d90/iterative__tree__traversals_8cpp.html#a8cf816bb9e4443551622b4960c42d182", null ]
 ];

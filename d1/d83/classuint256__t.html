@@ -844,8 +844,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            <span class="keywordflow">return</span> {<a class="code" href="../../d1/d83/classuint256__t.html">uint256_t</a>(1), <a class="code" href="../../d1/d83/classuint256__t.html">uint256_t</a>(0)};</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        }</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        <a class="code" href="../../d1/d83/classuint256__t.html">uint256_t</a> tmp = p, tmp2 = *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        uint16_t <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> = tmp.<a class="code" href="../../d1/d83/classuint256__t.html#a033d66c965e8d1fbc5bafb59ad60e163">_lez</a>() - <a class="code" href="../../d1/d83/classuint256__t.html#a033d66c965e8d1fbc5bafb59ad60e163">_lez</a>();</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        tmp &lt;&lt;= <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        uint16_t left = tmp.<a class="code" href="../../d1/d83/classuint256__t.html#a033d66c965e8d1fbc5bafb59ad60e163">_lez</a>() - <a class="code" href="../../d1/d83/classuint256__t.html#a033d66c965e8d1fbc5bafb59ad60e163">_lez</a>();</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        tmp &lt;&lt;= left;</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        <a class="code" href="../../d1/d83/classuint256__t.html">uint256_t</a> quotient(0);</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        <a class="code" href="../../d1/d83/classuint256__t.html">uint256_t</a> zero(0);</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        <span class="keywordflow">while</span> (left &gt;= 0 &amp;&amp; tmp2 &gt;= p) {</div>
@@ -853,28 +853,21 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            <span class="keywordflow">if</span> (shf) {</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                tmp &gt;&gt;= shf;</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                quotient &lt;&lt;= shf;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> -= shf;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                left -= shf;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;            }</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            <span class="keywordflow">if</span> (tmp2 &lt; tmp) {</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                tmp &gt;&gt;= 1;</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                quotient &lt;&lt;= 1;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                --<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                --left;</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;            }</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            tmp2 -= tmp;</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            ++quotient;</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        }</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordflow">return</span> {quotient &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>, tmp2};</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordflow">return</span> {quotient &lt;&lt; left, tmp2};</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    }</div>
 <div class="ttc" id="aclassuint256__t_html"><div class="ttname"><a href="../../d1/d83/classuint256__t.html">uint256_t</a></div><div class="ttdoc">class for 256-bit unsigned integer</div><div class="ttdef"><b>Definition:</b> uint256_t.hpp:33</div></div>
 <div class="ttc" id="aclassuint256__t_html_a033d66c965e8d1fbc5bafb59ad60e163"><div class="ttname"><a href="../../d1/d83/classuint256__t.html#a033d66c965e8d1fbc5bafb59ad60e163">uint256_t::_lez</a></div><div class="ttdeci">uint32_t _lez()</div><div class="ttdoc">Leading zeroes in binary.</div><div class="ttdef"><b>Definition:</b> uint256_t.hpp:123</div></div>
-<div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a></div><div class="ttdeci">T left(T... args)</div></div>
-</div><!-- fragment --><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d83/classuint256__t_af69316a7e4c2d17070de98d6a92b1c51_cgraph.svg" width="438" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa4cf08fa6a33f17594b5a842866f39a1"></a>
@@ -1201,7 +1194,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d83/classuint256__t_ad4928175eaaaa2b559bc945affe63ad2_cgraph.svg" width="628" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d83/classuint256__t_ad4928175eaaaa2b559bc945affe63ad2_cgraph.svg" width="319" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1293,7 +1286,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d83/classuint256__t_a59a697fc2ee38e46506a80ddf405c188_cgraph.svg" width="636" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d83/classuint256__t_a59a697fc2ee38e46506a80ddf405c188_cgraph.svg" width="327" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2379,7 +2372,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d83/classuint256__t_a4fdeb4d4bf8cca4ee99b8487e59831df_cgraph.svg" width="620" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d83/classuint256__t_a4fdeb4d4bf8cca4ee99b8487e59831df_cgraph.svg" width="311" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2471,7 +2464,7 @@ template&lt;typename T , typename  = typename std::enable_if&lt;                
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d83/classuint256__t_a00d18c74d5cbf3c087665172079e67dd_cgraph.svg" width="628" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d83/classuint256__t_a00d18c74d5cbf3c087665172079e67dd_cgraph.svg" width="319" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
