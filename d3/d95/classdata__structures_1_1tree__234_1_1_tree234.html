@@ -448,7 +448,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <span class="keywordflow">if</span> (next_node) {</div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;        split_node.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr/reset.html">reset</a>(<a class="code" href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a6749ebb40710c9752a2771eda03c6b3e">Insert</a>(next_node, item));</div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        split_node.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr/reset.html">reset</a>(<span class="keyword">new</span> <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a5408f139915768c94dc42ae9b1491754">Node</a>(item));</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        split_node.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr/reset.html">reset</a>(<span class="keyword">new</span> <a class="code" href="../../db/d8b/struct_node.html">Node</a>(item));</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    }</div>
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160; </div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    <span class="keywordflow">if</span> (split_node) {</div>
@@ -460,9 +460,8 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a11f0d016dff7f7e62b3dddb9fdf47805"><div class="ttname"><a href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a11f0d016dff7f7e62b3dddb9fdf47805">data_structures::tree_234::Tree234::MergeNode</a></div><div class="ttdeci">Node * MergeNode(Node *dst_node, Node *node)</div><div class="ttdoc">A helper function used during post-merge insert.</div><div class="ttdef"><b>Definition:</b> tree_234.cpp:700</div></div>
 <div class="ttc" id="aclassdata__structures_1_1tree__234_1_1_tree234_html_a6749ebb40710c9752a2771eda03c6b3e"><div class="ttname"><a href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a6749ebb40710c9752a2771eda03c6b3e">data_structures::tree_234::Tree234::Insert</a></div><div class="ttdeci">void Insert(int64_t item)</div><div class="ttdoc">Insert item to tree.</div><div class="ttdef"><b>Definition:</b> tree_234.cpp:655</div></div>
 <div class="ttc" id="aget_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/unique_ptr/get.html">std::unique_ptr::get</a></div><div class="ttdeci">T get(T... args)</div></div>
-<div class="ttc" id="aiterative__tree__traversals_8cpp_html_a5408f139915768c94dc42ae9b1491754"><div class="ttname"><a href="../../d8/d90/iterative__tree__traversals_8cpp.html#a5408f139915768c94dc42ae9b1491754">Node</a></div><div class="ttdeci">struct BinaryTree{ int data Node</div><div class="ttdoc">for reverse</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:44</div></div>
 <div class="ttc" id="areset_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/unique_ptr/reset.html">std::unique_ptr::reset</a></div><div class="ttdeci">T reset(T... args)</div></div>
-<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdef"><b>Definition:</b> linkedlist_implentation_usingarray.cpp:14</div></div>
+<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdoc">for reverse</div><div class="ttdef"><b>Definition:</b> linkedlist_implentation_usingarray.cpp:14</div></div>
 <div class="ttc" id="aunique_ptr_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -506,7 +505,7 @@ Here is the call graph for this function:</div>
 </dl>
 <div class="fragment"><div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;                                          {</div>
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a348ea76c7629b2dcf740be062f970a36">root_</a>) {</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        <a class="code" href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a348ea76c7629b2dcf740be062f970a36">root_</a> = <span class="keyword">new</span> <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a5408f139915768c94dc42ae9b1491754">Node</a>(item);</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        <a class="code" href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a348ea76c7629b2dcf740be062f970a36">root_</a> = <span class="keyword">new</span> <a class="code" href="../../db/d8b/struct_node.html">Node</a>(item);</div>
 <div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    }</div>
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160; </div>
@@ -560,7 +559,7 @@ Here is the call graph for this function:</div>
 </dl>
 <div class="fragment"><div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;                                         {</div>
 <div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a348ea76c7629b2dcf740be062f970a36">root_</a>) {</div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        <a class="code" href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a348ea76c7629b2dcf740be062f970a36">root_</a> = <span class="keyword">new</span> <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a5408f139915768c94dc42ae9b1491754">Node</a>(item);</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        <a class="code" href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#a348ea76c7629b2dcf740be062f970a36">root_</a> = <span class="keyword">new</span> <a class="code" href="../../db/d8b/struct_node.html">Node</a>(item);</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    }</div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160; </div>
@@ -569,7 +568,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160; </div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="../../d5/da1/structnode.html">node</a>) {</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr&lt;Node&gt;</a> tmp(<span class="keyword">new</span> <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a5408f139915768c94dc42ae9b1491754">Node</a>(item));</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/memory/unique_ptr.html">std::unique_ptr&lt;Node&gt;</a> tmp(<span class="keyword">new</span> <a class="code" href="../../db/d8b/struct_node.html">Node</a>(item));</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;            <a class="code" href="../../d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ad37e29e2a4a6cc0eb65cbd5595e1da95">MergeNodeNotFull</a>(parent, tmp.get());</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        }</div>
@@ -656,17 +655,18 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;                                                   {</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    <a class="code" href="../../db/d8b/struct_node.html">Node</a> *left = parent-&gt;GetItemLeftChild(index);</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;    <a class="code" href="../../db/d8b/struct_node.html">Node</a> *right = parent-&gt;GetItemRightChild(index);</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;    <a class="code" href="../../db/d8b/struct_node.html">Node</a> *<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> = parent-&gt;GetItemLeftChild(index);</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;    <a class="code" href="../../db/d8b/struct_node.html">Node</a> *<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = parent-&gt;GetItemRightChild(index);</div>
 <div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160; </div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;    assert(right &amp;&amp; right-&gt;Is34Node());</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    assert(left &amp;&amp; left-&gt;Is2Node());</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;    assert(right &amp;&amp; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;Is34Node());</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;    assert(left &amp;&amp; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>-&gt;Is2Node());</div>
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160; </div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    left-&gt;InsertItemByIndex(left-&gt;GetCount(), parent-&gt;GetItem(index),</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                            right-&gt;GetLeftmostChild(), <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    parent-&gt;SetItem(index, right-&gt;GetMinItem());</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;    right-&gt;RemoveItemByIndex(0, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>-&gt;InsertItemByIndex(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>-&gt;GetCount(), parent-&gt;GetItem(index),</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                            <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;GetLeftmostChild(), <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;    parent-&gt;SetItem(index, <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;GetMinItem());</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;RemoveItemByIndex(0, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;}</div>
+<div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::left</a></div><div class="ttdeci">T left(T... args)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1389,16 +1389,16 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;                                                    {</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;    <a class="code" href="../../db/d8b/struct_node.html">Node</a> *left = parent-&gt;GetItemLeftChild(index);</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    <a class="code" href="../../db/d8b/struct_node.html">Node</a> *right = parent-&gt;GetItemRightChild(index);</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;    <a class="code" href="../../db/d8b/struct_node.html">Node</a> *<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> = parent-&gt;GetItemLeftChild(index);</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    <a class="code" href="../../db/d8b/struct_node.html">Node</a> *<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = parent-&gt;GetItemRightChild(index);</div>
 <div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160; </div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;    assert(left &amp;&amp; left-&gt;Is34Node());</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    assert(right &amp;&amp; right-&gt;Is2Node());</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;    assert(left &amp;&amp; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>-&gt;Is34Node());</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    assert(right &amp;&amp; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;Is2Node());</div>
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160; </div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    right-&gt;InsertItemByIndex(0, parent-&gt;GetItem(index),</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;                             left-&gt;GetRightmostChild(), <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;    parent-&gt;SetItem(index, left-&gt;GetMaxItem());</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;    left-&gt;RemoveItemByIndex(left-&gt;GetCount() - 1, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;InsertItemByIndex(0, parent-&gt;GetItem(index),</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;                             <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>-&gt;GetRightmostChild(), <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;    parent-&gt;SetItem(index, <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>-&gt;GetMaxItem());</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>-&gt;RemoveItemByIndex(<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>-&gt;GetCount() - 1, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
@@ -1438,17 +1438,17 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                                   {</div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    assert(<a class="code" href="../../d5/da1/structnode.html">node</a>-&gt;GetCount() == 3);</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160; </div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <a class="code" href="../../db/d8b/struct_node.html">Node</a> *left = <a class="code" href="../../d1/df3/hash__search_8cpp.html#a8ca8dcb494104d273679e219e53d0555">node</a>;</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <a class="code" href="../../db/d8b/struct_node.html">Node</a> *<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a> = <a class="code" href="../../d1/df3/hash__search_8cpp.html#a8ca8dcb494104d273679e219e53d0555">node</a>;</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160; </div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    <a class="code" href="../../db/d8b/struct_node.html">Node</a> *right = <span class="keyword">new</span> <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a5408f139915768c94dc42ae9b1491754">Node</a>(<a class="code" href="../../d5/da1/structnode.html">node</a>-&gt;GetItem(2));</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    right-&gt;SetChild(0, <a class="code" href="../../d5/da1/structnode.html">node</a>-&gt;GetChild(2));</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    right-&gt;SetChild(1, <a class="code" href="../../d5/da1/structnode.html">node</a>-&gt;GetChild(3));</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    <a class="code" href="../../db/d8b/struct_node.html">Node</a> *<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = <span class="keyword">new</span> <a class="code" href="../../db/d8b/struct_node.html">Node</a>(<a class="code" href="../../d5/da1/structnode.html">node</a>-&gt;GetItem(2));</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;SetChild(0, <a class="code" href="../../d5/da1/structnode.html">node</a>-&gt;GetChild(2));</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;SetChild(1, <a class="code" href="../../d5/da1/structnode.html">node</a>-&gt;GetChild(3));</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160; </div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    <a class="code" href="../../db/d8b/struct_node.html">Node</a> *parent = <span class="keyword">new</span> <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a5408f139915768c94dc42ae9b1491754">Node</a>(<a class="code" href="../../d5/da1/structnode.html">node</a>-&gt;GetItem(1));</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    <a class="code" href="../../db/d8b/struct_node.html">Node</a> *parent = <span class="keyword">new</span> <a class="code" href="../../db/d8b/struct_node.html">Node</a>(<a class="code" href="../../d5/da1/structnode.html">node</a>-&gt;GetItem(1));</div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    parent-&gt;SetChild(0, left);</div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    parent-&gt;SetChild(1, right);</div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160; </div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    left-&gt;SetCount(1);</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">left</a>-&gt;SetCount(1);</div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160; </div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    <span class="keywordflow">return</span> parent;</div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;}</div>

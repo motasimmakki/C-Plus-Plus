@@ -263,20 +263,21 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the newly created node </dd></dl>
 <div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                                                        {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">auto</span> newNode = std::make_shared&lt;Node&gt;(<a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a5408f139915768c94dc42ae9b1491754">Node</a>());</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">auto</span> newNode = std::make_shared&lt;Node&gt;(<a class="code" href="../../db/d8b/struct_node.html">Node</a>());</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">if</span> (i == j) {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            newNode-&gt;val = <a class="code" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a8ff495d2f389b4aaa54449c26c6078f3">vec</a>[i];</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            uint32_t mid = i + (j - i) / 2;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keyword">auto</span> leftt = <a class="code" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a67d8371bc998c67d53e8f64db4f52767">construct</a>(i, mid);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keyword">auto</span> right = <a class="code" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a67d8371bc998c67d53e8f64db4f52767">construct</a>(mid + 1, j);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            newNode-&gt;val = leftt-&gt;val + right-&gt;val;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keyword">auto</span> <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a> = <a class="code" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#a67d8371bc998c67d53e8f64db4f52767">construct</a>(mid + 1, j);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            newNode-&gt;val = leftt-&gt;val + <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>-&gt;val;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            newNode-&gt;left = leftt;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            newNode-&gt;right = right;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            newNode-&gt;right = <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/left.html">right</a>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">return</span> newNode;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
-<div class="ttc" id="aiterative__tree__traversals_8cpp_html_a5408f139915768c94dc42ae9b1491754"><div class="ttname"><a href="../../d8/d90/iterative__tree__traversals_8cpp.html#a5408f139915768c94dc42ae9b1491754">Node</a></div><div class="ttdeci">struct BinaryTree{ int data Node</div><div class="ttdoc">for reverse</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:44</div></div>
+<div class="ttc" id="aleft_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/left.html">std::right</a></div><div class="ttdeci">T right(T... args)</div></div>
+<div class="ttc" id="astruct_node_html"><div class="ttname"><a href="../../db/d8b/struct_node.html">Node</a></div><div class="ttdoc">for reverse</div><div class="ttdef"><b>Definition:</b> linkedlist_implentation_usingarray.cpp:14</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -386,7 +387,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the new node </dd></dl>
 <div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                                {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">auto</span> newNode = std::make_shared&lt;Node&gt;(<a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a5408f139915768c94dc42ae9b1491754">Node</a>());</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">auto</span> newNode = std::make_shared&lt;Node&gt;(<a class="code" href="../../db/d8b/struct_node.html">Node</a>());</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        newNode-&gt;left = curr-&gt;left;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        newNode-&gt;right = curr-&gt;right;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        newNode-&gt;prop = curr-&gt;prop;</div>
@@ -664,7 +665,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">if</span> (i &gt; r || j &lt; l) {</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">return</span> curr;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keyword">auto</span> newNode = std::make_shared&lt;Node&gt;(<a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#a5408f139915768c94dc42ae9b1491754">Node</a>());</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keyword">auto</span> newNode = std::make_shared&lt;Node&gt;(<a class="code" href="../../db/d8b/struct_node.html">Node</a>());</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        uint32_t mid = i + (j - i) / 2;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        newNode-&gt;left = <a class="code" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#af16c0c87b29119f066041d6e71ab50e0">update</a>(i, mid, l, r, value, curr-&gt;left);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        newNode-&gt;right = <a class="code" href="../../d8/d28/classrange__queries_1_1per_seg_tree.html#af16c0c87b29119f066041d6e71ab50e0">update</a>(mid + 1, j, l, r, value, curr-&gt;right);</div>
