@@ -184,12 +184,12 @@ Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">while</span>(!<a class="code" href="../../d1/dc2/classstack.html">stack</a>.empty() || current){</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">while</span>(current){</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(current);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                current = current-&gt;left;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                current = current-&gt;<a class="code" href="../../db/d8b/struct_node.html#ad0976834843c7618677d22a10c495b36">left</a>;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            }</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            current = <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">top</a>();</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a6cd4b95d5de00d41b2491392338384dc">pop</a>();    </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.push_back(current-&gt;data);   </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            current = current-&gt;right;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>.push_back(current-&gt;<a class="code" href="../../db/d8b/struct_node.html#a87c003c9f600e3fc58e6e90835f0b605">data</a>);   </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            current = current-&gt;<a class="code" href="../../db/d8b/struct_node.html#af99e7102380da88d7c079fa264230cf4">right</a>;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }   </div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">result</a>;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
@@ -200,6 +200,9 @@ Public Member Functions</h2></td></tr>
 <div class="ttc" id="afibonacci__sum_8cpp_html_aadb40ac4c74a7efc0680b83eeee138aa"><div class="ttname"><a href="../../de/dc3/fibonacci__sum_8cpp.html#aadb40ac4c74a7efc0680b83eeee138aa">math::fibonacci_sum::result</a></div><div class="ttdeci">uint64_t result(uint64_t n)</div><div class="ttdef"><b>Definition:</b> fibonacci_sum.cpp:76</div></div>
 <div class="ttc" id="aparanthesis__matching_8cpp_html_aa37d24a036d239b3b528f13b9de880c7"><div class="ttname"><a href="../../dc/dc5/paranthesis__matching_8cpp.html#aa37d24a036d239b3b528f13b9de880c7">stack</a></div><div class="ttdeci">char stack[MAX]</div><div class="ttdef"><b>Definition:</b> paranthesis_matching.cpp:20</div></div>
 <div class="ttc" id="astack_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/stack.html">std::stack</a></div></div>
+<div class="ttc" id="astruct_node_html_a87c003c9f600e3fc58e6e90835f0b605"><div class="ttname"><a href="../../db/d8b/struct_node.html#a87c003c9f600e3fc58e6e90835f0b605">Node::data</a></div><div class="ttdeci">int data</div><div class="ttdoc">The value/key of the node.</div><div class="ttdef"><b>Definition:</b> linkedlist_implentation_usingarray.cpp:15</div></div>
+<div class="ttc" id="astruct_node_html_ad0976834843c7618677d22a10c495b36"><div class="ttname"><a href="../../db/d8b/struct_node.html#ad0976834843c7618677d22a10c495b36">Node::left</a></div><div class="ttdeci">struct Node * left</div><div class="ttdoc">struct pointer to left subtree.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:46</div></div>
+<div class="ttc" id="astruct_node_html_af99e7102380da88d7c079fa264230cf4"><div class="ttname"><a href="../../db/d8b/struct_node.html#af99e7102380da88d7c079fa264230cf4">Node::right</a></div><div class="ttdeci">struct Node * right</div><div class="ttdoc">struct pointer to right subtree.</div><div class="ttdef"><b>Definition:</b> iterative_tree_traversals.cpp:47</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt; int &gt;</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -239,11 +242,11 @@ Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="../../db/d8b/struct_node.html">Node</a> *current = <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">top</a>();</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a6cd4b95d5de00d41b2491392338384dc">pop</a>();</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span>(current-&gt;left){</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(current-&gt;left);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span>(current-&gt;<a class="code" href="../../db/d8b/struct_node.html#ad0976834843c7618677d22a10c495b36">left</a>){</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(current-&gt;<a class="code" href="../../db/d8b/struct_node.html#ad0976834843c7618677d22a10c495b36">left</a>);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">if</span>(current-&gt;right){</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(current-&gt;right);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">if</span>(current-&gt;<a class="code" href="../../db/d8b/struct_node.html#af99e7102380da88d7c079fa264230cf4">right</a>){</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(current-&gt;<a class="code" href="../../db/d8b/struct_node.html#af99e7102380da88d7c079fa264230cf4">right</a>);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
@@ -290,11 +293,11 @@ Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="../../db/d8b/struct_node.html">Node</a> *current = <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a21c0bb6ce7dcfe445cc12031977ea344">top</a>();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a6cd4b95d5de00d41b2491392338384dc">pop</a>();</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span>(current-&gt;right){</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(current-&gt;right);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span>(current-&gt;<a class="code" href="../../db/d8b/struct_node.html#af99e7102380da88d7c079fa264230cf4">right</a>){</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(current-&gt;<a class="code" href="../../db/d8b/struct_node.html#af99e7102380da88d7c079fa264230cf4">right</a>);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">if</span>(current-&gt;left){</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(current-&gt;left);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">if</span>(current-&gt;<a class="code" href="../../db/d8b/struct_node.html#ad0976834843c7618677d22a10c495b36">left</a>){</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="../../d1/dc2/classstack.html">stack</a>.<a class="code" href="../../d1/dc2/classstack.html#a5705c3926dcf5fd3f9c964467a50b81d">push</a>(current-&gt;<a class="code" href="../../db/d8b/struct_node.html#ad0976834843c7618677d22a10c495b36">left</a>);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    </div>
