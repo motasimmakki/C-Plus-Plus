@@ -84,7 +84,7 @@ var searchData=
   ['binary_5fsearch_5ftree2_2ecpp_214',['binary_search_tree2.cpp',['../df/d42/binary__search__tree2_8cpp.html',1,'']]],
   ['binaryheap_2ecpp_215',['binaryheap.cpp',['../de/dc3/binaryheap_8cpp.html',1,'']]],
   ['binarysearch_216',['BinarySearch',['../d5/dab/structdata__structures_1_1list__array_1_1list.html#a3b4abfffc730e07fcbd5844e09add8cd',1,'data_structures::list_array::list']]],
-  ['binarytree_217',['BinaryTree',['../da/d1e/class_binary_tree.html',1,'']]],
+  ['binarytree_217',['BinaryTree',['../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html',1,'others::iterative_tree_traversals']]],
   ['bind_218',['bind',['http://en.cppreference.com/w/cpp/utility/functional/bind.html',0,'std']]],
   ['binexpo_219',['binExpo',['../d8/d53/modular__inverse__fermat__little__theorem_8cpp.html#a4c6eefd1254eab3e8d34bf02c205e0f4',1,'binExpo(int64_t a, int64_t b, int64_t m):&#160;modular_inverse_fermat_little_theorem.cpp'],['../de/dcf/binary__exponent_8cpp.html#aeb48dce0725e63d19147944f41843c73',1,'binExpo(int a, int b):&#160;binary_exponent.cpp']]],
   ['binexpo_5falt_220',['binExpo_alt',['../de/dcf/binary__exponent_8cpp.html#a31dbf5f7ceb9c9eec831ef9f7782291f',1,'binary_exponent.cpp']]],

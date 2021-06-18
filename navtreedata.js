@@ -123,19 +123,19 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"cpp/iterator/distance.html",
-"cpp/thread/lock.html",
-"d1/d83/classuint256__t.html#ad5ba734dc60992a6907f2d3462db370a",
-"d3/d4c/xor__cipher_8cpp.html#aeff72a463ffc580c16cc849cbbdc58ef",
-"d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#ae7cf126a3a8f9d20c81b21584d061a08",
-"d6/d45/structciphers_1_1elliptic__curve__key__exchange_1_1_point.html#a8235ac3f9400bd3c0364fc99a27f3eb8",
-"d8/d53/modular__inverse__fermat__little__theorem_8cpp.html",
-"d9/d49/kohonen__som__trace_8cpp.html#ab47fb569e63648bd76e7edfdacc02dbd",
-"da/da3/uint256__t_8hpp.html#ac0284490bb7e07b5f71b5245b503c1cb",
-"db/df3/happy__number_8cpp.html",
-"de/d0a/namespacemerge__insertion.html",
-"functions_rela.html"
+"",
+"cpp/io/c/vfwprintf.html",
+"cpp/string/wide/iswdigit.html",
+"d1/d83/classuint256__t.html#a4c84702c149b17c2e162eac3137fcac5",
+"d3/d06/ode__semi__implicit__euler_8cpp.html#aa13517b8e5de1b75592052db7f7e237f",
+"d4/dd2/namespacequadratic__probing.html#a40d617ebf4d6ba21bcda8d8d1faa2357",
+"d6/d26/classciphers_1_1_hill_cipher.html#a14bfcd14af6cd853130cbacd32e35c13",
+"d7/d7c/classstatistics_1_1stats__computer1.html#a8ab2b14d5650b14e46b70b412573f60a",
+"d9/d00/factorial_8cpp.html#ae9945c15826a9c1b5c141db314b7f8b4",
+"da/d9a/class_graph.html#a14da756c7e346c651e8cf14df2437d4a",
+"db/d9a/classuint128__t.html#adce2432b148fe18179a5ea272f4eb040",
+"dd/d91/class_fenwick_tree.html#a115ff5c548b429b737ea09f75817d1f9",
+"dir_9c6faab82c22511b50177aa2e38e2780.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
