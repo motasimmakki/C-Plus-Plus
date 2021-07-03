@@ -110,7 +110,7 @@ var searchData=
   ['create_5flist_364',['create_list',['../d1/df3/hash__search_8cpp.html#ad0831425f1389166a9518f422d0c6ec5',1,'hash_search.cpp']]],
   ['create_5fmatrix_365',['create_matrix',['../de/d75/qr__eigen__values_8cpp.html#a33cb0a68c36aa26fd599c7c66da86ed7',1,'qr_eigen_values.cpp']]],
   ['create_5frandom_5farray_366',['create_random_array',['../dd/d0d/insertion__sort_8cpp.html#a59914553f24088342c139645a02a8a49',1,'insertion_sort.cpp']]],
-  ['createnewnode_367',['createNewNode',['../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#ab519d450ba527b5651f717d6c4dacce8',1,'others::iterative_tree_traversals::BinaryTree']]],
+  ['createnewnode_367',['createNewNode',['../d9/d12/classothers_1_1iterative__tree__traversals_1_1_binary_tree.html#a3078a5ccf45d6a7031dcf46e43de65b6',1,'others::iterative_tree_traversals::BinaryTree']]],
   ['createnode_368',['createNode',['../d8/dee/avltree_8cpp.html#a1ecfaaea49d452772dbb2b28133e36e0',1,'avltree.cpp']]],
   ['createset_369',['CreateSet',['../de/d23/disjoint__set_8cpp.html#a010965fc5f16cca5a62506afab24e4ec',1,'disjoint_set.cpp']]],
   ['cref_370',['cref',['http://en.cppreference.com/w/cpp/utility/functional/ref.html',0,'std']]],
