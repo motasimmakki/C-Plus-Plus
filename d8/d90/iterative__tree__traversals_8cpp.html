@@ -158,13 +158,13 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Iterative version of Preorder, Postorder, and preorder <a href="https://en.wikipedia.org/wiki/Tree_traversal">Traversal of the Tree</a> </p>
 <dl class="section author"><dt>Author</dt><dd><a href="https://github.com/motasimmakki">Motasim</a></dd></dl>
-<h3><a class="anchor" id="autotoc_md70"></a>
+<h3><a class="anchor" id="autotoc_md76"></a>
 Iterative Preorder Traversal of a tree</h3>
 <p>Create a Stack that will store the <a class="el" href="../../db/d8b/struct_node.html">Node</a> of Tree. Push the root node into the stack. Save the root into the variabe named as current, and pop and elemnt from the stack. Store the data of current into the result array, and start traversing from it. Push both the child node of the current node into the stack, first right child then left child. Repeat the same set of steps untill the Stack becomes empty. And return the result array as the preorder traversal of a tree.</p>
-<h3><a class="anchor" id="autotoc_md71"></a>
+<h3><a class="anchor" id="autotoc_md77"></a>
 Iterative Postorder Traversal of a tree</h3>
 <p>Create a Stack that will store the <a class="el" href="../../db/d8b/struct_node.html">Node</a> of Tree. Push the root node into the stack. Save the root into the variabe named as current, and pop and elemnt from the stack. Store the data of current into the result array, and start traversing from it. Push both the child node of the current node into the stack, first left child then right child. Repeat the same set of steps untill the Stack becomes empty. Now reverse the result array and then return it to the calling function as a postorder traversal of a tree.</p>
-<h3><a class="anchor" id="autotoc_md72"></a>
+<h3><a class="anchor" id="autotoc_md78"></a>
 Iterative Inorder Traversal of a tree</h3>
 <p>Create a Stack that will store the <a class="el" href="../../db/d8b/struct_node.html">Node</a> of Tree. Push the root node into the stack. Save the root into the variabe named as current. Now iterate and take the current to the extreme left of the tree by traversing only to its left. Pop the elemnt from the stack and assign it to the current. Store the data of current into the result array. Repeat the same set of steps until the Stack becomes empty or the current becomes NULL. And return the result array as the inorder traversal of a tree. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -226,7 +226,7 @@ Iterative Inorder Traversal of a tree</h3>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nPre-order test on-negative value Passed!&quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#aa9ef334cd7eb607f4eb8732566ea00b8">test5</a>(binaryTree, root);  <span class="comment">// run postorder-iterative test on negative values</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nPost-order test on negative value Passed!&quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nPost-order test on-negative value Passed!&quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <a class="code" href="../../d8/d90/iterative__tree__traversals_8cpp.html#af727f920064f2b8f484b589b60d49b89">test6</a>(binaryTree, root);  <span class="comment">// run inorder-iterative test on negative values</span></div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a>&lt;&lt; <span class="stringliteral">&quot;\nIn-order test on-negative value Passed!&quot;</span>&lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
