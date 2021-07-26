@@ -26,10 +26,10 @@ var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
     [ "The Algorithms - C++", "index.html", [
-      [ "Overview", "index.html#autotoc_md79", null ],
-      [ "Features", "index.html#autotoc_md80", null ],
-      [ "Documentation", "index.html#autotoc_md81", null ],
-      [ "Contributions", "index.html#autotoc_md82", null ]
+      [ "Overview", "index.html#autotoc_md83", null ],
+      [ "Features", "index.html#autotoc_md84", null ],
+      [ "Documentation", "index.html#autotoc_md85", null ],
+      [ "Contributions", "index.html#autotoc_md86", null ]
     ] ],
     [ "Contributor Covenant Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md4", null ],
@@ -132,15 +132,16 @@ var NAVTREEINDEX =
 "cpp/iterator/distance.html",
 "cpp/thread/lock.html",
 "d1/d83/classuint256__t.html#ad5ba734dc60992a6907f2d3462db370a",
-"d3/d4c/xor__cipher_8cpp.html#a6099b7e0f1793f418d2c1befca8355a4",
-"d4/df4/classmachine__learning_1_1neural__network_1_1_neural_network.html#a8c5a466131aa2ae6b7276185b0834053",
-"d6/d42/miller__rabin_8cpp.html#a798398d5bfd375a3c0ce68100842f6f5",
-"d8/d14/namespacen__queens__optimized.html",
-"d9/d27/namespacelist__array.html",
-"da/d9a/class_graph.html#acfd6fbc5243626bfb7b7116b76fedab0",
-"db/da9/classqueue.html#ad215eee654953d25150bb25d5ac12b7c",
-"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#ad45fde095ac00effe1fe00b1d85ff9c7",
-"functions_func_c.html"
+"d3/d26/classdata__structures_1_1trie__using__hashmap_1_1_trie.html#a832072498abeaa52ad43c4fc99cba248",
+"d4/dd2/namespacequadratic__probing.html#a90f9d8a71e3f148b65bcc0c1c8a49c70",
+"d5/ddb/bogo__sort_8cpp.html#ae1a3968e7947464bee7714f6d43b7002",
+"d7/d6a/bisection__method_8cpp.html#a0a3abbca80bc98e7abcb3ae73abe0f14",
+"d8/dab/classstatistics_1_1stats__computer2.html",
+"da/d4b/depth__first__search__with__stack_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",
+"db/d93/check__prime_8cpp.html#aa18b3517017d99bb4024853bddba5532",
+"dd/d1c/classhash__chain.html#a6b4b4de1a8c96f98a63a77f650a9dcff",
+"df/d42/binary__search__tree2_8cpp.html#ab00b8d0f21aeb5fbddb6decf3bcb640a",
+""
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

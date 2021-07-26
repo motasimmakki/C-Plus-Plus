@@ -71,6 +71,9 @@ var annotated_dup =
       ] ]
     ] ],
     [ "operations_on_datastructures", "da/d6d/namespaceoperations__on__datastructures.html", [
+      [ "inorder_traversal_of_bst", null, [
+        [ "Node", "d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node.html", "d5/db5/classoperations__on__datastructures_1_1inorder__traversal__of__bst_1_1_node" ]
+      ] ],
       [ "trie_operations", null, [
         [ "Tnode", "d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode.html", "d0/d5f/classoperations__on__datastructures_1_1trie__operations_1_1_tnode" ]
       ] ]
@@ -94,6 +97,11 @@ var annotated_dup =
         [ "HLD", "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html", "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d" ]
       ] ],
       [ "perSegTree", "d8/d28/classrange__queries_1_1per_seg_tree.html", "d8/d28/classrange__queries_1_1per_seg_tree" ]
+    ] ],
+    [ "search", "d9/dca/namespacesearch.html", [
+      [ "sublist_search", null, [
+        [ "Node", "da/d61/structsearch_1_1sublist__search_1_1_node.html", "da/d61/structsearch_1_1sublist__search_1_1_node" ]
+      ] ]
     ] ],
     [ "statistics", "d2/dcf/namespacestatistics.html", [
       [ "stats_computer1", "d7/d7c/classstatistics_1_1stats__computer1.html", "d7/d7c/classstatistics_1_1stats__computer1" ],
@@ -125,17 +133,18 @@ var annotated_dup =
     [ "MinHeap", "d2/d05/class_min_heap.html", "d2/d05/class_min_heap" ],
     [ "MinHeapNode", "d5/d29/struct_min_heap_node.html", "d5/d29/struct_min_heap_node" ],
     [ "mst", "d1/d77/structmst.html", "d1/d77/structmst" ],
-    [ "node", "d5/da1/structnode.html", "d5/da1/structnode" ],
     [ "Node", "db/d8b/struct_node.html", "db/d8b/struct_node" ],
+    [ "node", "d5/da1/structnode.html", "d5/da1/structnode" ],
     [ "Point", "d8/dc8/struct_point.html", "d8/dc8/struct_point" ],
     [ "query", "dd/d1b/structquery.html", "dd/d1b/structquery" ],
-    [ "Queue", "dc/db5/struct_queue.html", "dc/db5/struct_queue" ],
     [ "queue", "db/da9/classqueue.html", "db/da9/classqueue" ],
+    [ "Queue", "dc/db5/struct_queue.html", "dc/db5/struct_queue" ],
     [ "RBtree", "d8/d72/class_r_btree.html", "d8/d72/class_r_btree" ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", "d4/db4/struct_segment_intersection" ],
     [ "Solution", "dd/d4f/class_solution.html", "dd/d4f/class_solution" ],
     [ "stack", "d1/dc2/classstack.html", "d1/dc2/classstack" ],
     [ "stack_linkedList", "d2/dc4/classstack__linked_list.html", "d2/dc4/classstack__linked_list" ],
+    [ "TestCases", "d5/d58/class_test_cases.html", "d5/d58/class_test_cases" ],
     [ "tower", "d2/d2c/structtower.html", "d2/d2c/structtower" ],
     [ "Trie", "dd/d2f/class_trie.html", "dd/d2f/class_trie" ],
     [ "uint128_t", "db/d9a/classuint128__t.html", "db/d9a/classuint128__t" ],
